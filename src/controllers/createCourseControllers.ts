@@ -4,8 +4,6 @@ import { createCourseModels } from '../models/createCourseModels';
 export const createCourse = async (req: Request, res: Response) => {
   try {
     const { courseName, courseInstructor, startDate, duration, price, validityOfCourse, noOfVideos } = req.body;
-    // const { courseName } = req.body;
-
     const course = new createCourseModels({
       courseName,
       courseInstructor,
